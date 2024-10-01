@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json()); // Middleware để phân tích JSON body
 
 // Kết nối đến MongoDB
-mongoose.connect('mongodb://localhost:27017/SimpleQuiz', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://thanhphu1103:d1SeurNgEZWi3m1G@sdn.3g9im.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
 
